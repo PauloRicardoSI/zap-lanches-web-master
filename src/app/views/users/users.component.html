@@ -1,0 +1,56 @@
+<div class="row mt-5">
+    <div class="col-md-12">
+        <!--Card-->
+        <div class="card card-cascade narrower mt-5">
+            <!--Card image-->
+            <div class="view gradient-card-header blue darken-2">
+                <h4 class="h4-responsive text-white">Gestão de Pessoas</h4>
+            </div>
+            <!--/Card image-->
+            <!--Card content-->
+            <div class="card-body">
+                <form class="form-inline active-purple-3 active-purple-4">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Buscar" aria-label="Search">
+                </form>   
+                
+                <table class="table">
+                    <thead>
+                        
+                        <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Endreço</th>
+                                <th>Fone</th>
+                                <th>Perfil</th>
+                                    
+                                <th>Ações</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>        
+
+                        <tr *ngFor="let order of orders">
+                            <th scope="row">{{ order.client }}</th>
+                            <td>{{ order.email }}</td>
+                            <td>{{ order.adress }}</td>
+                            <td>{{ order.phone }}</td>
+                            <td>
+                                {{ order.profile }}</td>
+                            <td>
+                                <a routerLink="/editusers"><mdb-icon fas icon="user-edit fa-2x blue-text"></mdb-icon></a>
+                                <a routerLink="/deleteusers"><mdb-icon fas icon="trash-alt red-text m-3 fa-2x"></mdb-icon></a>
+                            </td>                                                    
+                                               
+                    </tbody>
+                    
+                </table>
+                <a routerLink="/addusers"><mdb-icon fas icon="user-plus fa-2x blue-text"></mdb-icon></a>
+            </div>
+            <!--/.Card content-->
+        </div>
+        <!--/.Card-->
+    </div>
+  </div>
+
+  

@@ -1,0 +1,68 @@
+<div class="row mt-5">
+    <div class="col-md-12">
+        <!--Card-->
+        <div class="card card-cascade narrower mt-5">
+            <!--Card image-->
+            <div class="view gradient-card-header blue darken-2">
+                <h4 class="h4-responsive text-white">Adicionar Pessoas</h4>
+            </div>
+            <!--/Card image-->
+            <!--Card content-->
+            <div class="card-body">
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                                <th>Nome</th>
+                                <th>E-mail</th>
+                                <th>Endreço</th>
+                                <th>Fone</th>
+                                <th>
+                                    <a routerLink="addusers/addprofile"><mdb-icon fas icon="plus green-text fa-2x m-2"></mdb-icon>Perfil</a>
+                                </th>
+                                <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of orders">
+                            <td>
+                                <label for="validationTooltip01"></label>
+                                <input type="text" class="form-control" id="validationTooltip01"  value="{{ order.client }}" required>
+                            </td>
+
+                            <td>
+                                <label for="validationTooltip01"></label>
+                                <input type="text" class="form-control" id="validationTooltip01"  value="{{ order.email }}" required>
+                            </td>
+
+                            <td>
+                                <label for="validationTooltip01"></label>
+                                <input type="text" class="form-control" id="validationTooltip01"  value="{{ order.adress }}" required>
+                            </td>
+
+                            <td>
+                                <label for="validationTooltip01"></label>
+                                <input type="text" class="form-control" id="validationTooltip01"  value="{{ order.phone }}" required>
+                            </td>
+
+                            <td>
+                                <label for="validationTooltip01"></label>
+                                <input type="text" class="form-control" id="validationTooltip01"  value="{{ order.profile }}" required>
+                            </td>
+                            
+                            <td>
+                                <a routerLink="/users"><mdb-icon fas icon="user-check blue-text m-3 fa-2x"></mdb-icon></a>
+                                <a routerLink="/users"><mdb-icon fas icon="times-circle red-text fa-2x"></mdb-icon></a>
+                            </td>
+                            
+                          </tr>
+                        
+                                       
+                      </tbody>
+                </table>
+            </div>
+            <!--/.Card content-->
+        </div>
+        <!--/.Card-->
+    </div>
+  </div>

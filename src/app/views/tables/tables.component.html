@@ -1,0 +1,40 @@
+<div class="row mt-5">
+        <div class="col-md-12">
+            <!--Card-->
+            <div class="card card-cascade narrower mt-5">
+                <!--Card image-->
+                <div class="view gradient-card-header blue darken-2">
+                    <h4 class="h4-responsive text-white">Editar Mesas</h4>
+                </div>
+                <!--/Card image-->
+                <!--Card content-->
+                <div class="card-body">
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Número</th>
+                                <th>Situação</th>
+                                <th>Cliente</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let order of orders">
+                                <th scope="row">{{ order.id }}</th>                                
+                                <td>{{ order.situation }}</td>
+                                <td>{{ order.client }}</td>
+                            
+                                <td>
+                                    <a routerLink="/users"><mdb-icon fas icon="user-check blue-text m-3 fa-2x"></mdb-icon></a>
+                                    <a routerLink="/users"><mdb-icon fas icon="times-circle red-text fa-2x"></mdb-icon></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--/.Card content-->
+            </div>
+            <!--/.Card-->
+        </div>
+      </div>

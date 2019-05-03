@@ -1,0 +1,41 @@
+<div class="row mt-5">
+    <div class="col-md-12">
+        <!--Card-->
+        <div class="card card-cascade narrower mt-5">
+            <!--Card image-->
+            <div class="view gradient-card-header blue darken-2">
+                <h4 class="h4-responsive text-white">Pagamentos</h4>
+            </div>
+            <!--/Card image-->
+            <!--Card content-->
+            <div class="card-body">
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Cliente</th>
+                            <th>Data/Hora</th>
+                            <th>Demanda</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of orders">
+                            <th scope="row">{{ order.id }}</th>
+                            <td>{{ order.client }}</td>
+                            <td>{{ order.time }}</td>
+                            <td>{{ order.demand }}</td>
+                            <td>
+                              <a>DESPACHAR</a> <br/>
+                              <a>CANCELAR</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--/.Card content-->
+        </div>
+        <!--/.Card-->
+    </div>
+  </div>

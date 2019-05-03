@@ -1,0 +1,43 @@
+<div class="row mt-5">
+  <div class="col-md-12">
+      <!--Card-->
+      <div class="card card-cascade narrower mt-5">
+          <!--Card image-->
+          <div class="view gradient-card-header blue darken-2">
+              <h4 class="h4-responsive text-white">Acompanhar Pedidos</h4>
+          </div>
+          <!--/Card image-->
+          <!--Card content-->
+          <div class="card-body">
+
+              <table class="table">
+                  <thead>
+                      <tr>
+                            <th>Tipo</th>
+                            <th>Produto</th>
+                            <th>Cliente</th>
+                            <th>Data/Hora</th>
+                            <th>Mesa</th>
+                            <th>Ações</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let order of orders">
+                          <th scope="row">{{ order.type }}</th>
+                          <th scope="row">{{ order.product}}</th>
+                          <td>{{ order.client }}</td>
+                          <td>{{ order.time }}</td>
+                          <td>{{ order.action }}</td>
+                          <td>
+                            <a>DESPACHAR</a> <br/>
+                            <a>CANCELAR</a>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <!--/.Card content-->
+      </div>
+      <!--/.Card-->
+  </div>
+</div>
