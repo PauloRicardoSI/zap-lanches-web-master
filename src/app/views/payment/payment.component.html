@@ -27,8 +27,8 @@
                             <td>{{ order.time }}</td>
                             <td>{{ order.demand }}</td>
                             <td>
-                              <a>DESPACHAR</a> <br/>
-                              <a>CANCELAR</a>
+                                <a routerLink="/orders"><mdb-icon fas icon="check-circle fa-2x blue-text" title="Confirmar"></mdb-icon></a>
+                                <a routerLink="/orders"><mdb-icon fas icon="times-circle red-text m-3 fa-2x" title="Cancelar"></mdb-icon></a>
                             </td>
                         </tr>
                     </tbody>

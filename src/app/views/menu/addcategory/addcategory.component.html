@@ -1,3 +1,42 @@
-<p>
-  addcategory works!
-</p>
+<div class="row mt-5">
+  <div class="col-md-12">
+      <!--Card-->
+      <div class="card card-cascade narrower mt-5">
+          <!--Card image-->
+          <div class="view gradient-card-header blue darken-2">
+              <h4 class="h4-responsive text-white">Adicionar Cardápio</h4>
+          </div>
+          <!--/Card image-->
+          <!--Card content-->
+          <div class="card-body">
+              
+              <table class="table">
+                  <thead>
+                      <tr>
+                          <th>Nome</th>
+                          <th>Descrição</th>
+                          <th>Valor</th>
+                          <th>Categoria</th>
+                          <th>Ações</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let order of orders">
+                          
+                        <td>{{ order.name }}</td>
+                        <td>{{ order.describle }}</td>
+                        <td>{{ order.value }}</td>
+                        <td>{{ order.category }}</td>
+                        <td>
+                            <a routerLink="/menu"><mdb-icon fas icon="save fa-2x blue-text text-white" title="Salvar"></mdb-icon></a>
+                            <a routerLink="/menu"><mdb-icon fas icon="times-circle red-text m-3 fa-2x" title="Cancelar"></mdb-icon></a>
+                        </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+          <!--/.Card content-->
+      </div>
+      <!--/.Card-->
+  </div>
+</div>

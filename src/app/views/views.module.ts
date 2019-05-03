@@ -19,15 +19,16 @@ import { OrdersComponent } from './orders/orders.component';
 import { UsersComponent } from './users/users.component';
 import { MenuComponent } from './menu/menu.component';
 import { TableComponent } from './table/table.component';
-import { TablesComponent } from './tables/tables.component';
+import { TablesComponent } from './table/tables/tables.component';
 import { PaymentComponent } from './payment/payment.component';
-import { EditusersComponent } from './editusers/editusers.component';
-import { DeleteusersComponent } from './deleteusers/deleteusers.component';
-import { AddusersComponent } from './addusers/addusers.component';
+import { EditusersComponent } from './users/editusers/editusers.component';
+import { DeleteusersComponent } from './users/deleteusers/deleteusers.component';
+import { AddusersComponent } from './users/addusers/addusers.component';
 import { EditmenuComponent } from './menu/editmenu/editmenu.component';
 import { DeletemenuComponent } from './menu/deletemenu/deletemenu.component';
 import { AddcategoryComponent } from './menu/addcategory/addcategory.component';
-import { AddprofileComponent } from './addusers/addprofile/addprofile.component';
+import { AddprofileComponent } from './users/addusers/addprofile/addprofile.component';
+import { DeletetableComponent } from './table/deletetable/deletetable.component';
 
 
 @NgModule({
@@ -67,6 +68,7 @@ import { AddprofileComponent } from './addusers/addprofile/addprofile.component'
     DeletemenuComponent,
     AddcategoryComponent,
     AddprofileComponent,
+    DeletetableComponent,
  
     
 
