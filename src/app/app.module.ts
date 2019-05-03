@@ -16,8 +16,8 @@ import { NavigationModule } from './main-layout/navigation/navigation.module';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-
+    AppComponent,
+  
   ],
 
   imports: [

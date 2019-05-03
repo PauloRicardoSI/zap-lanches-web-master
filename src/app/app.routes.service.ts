@@ -1,3 +1,4 @@
+import { LoginComponent } from './views/login/login.component';
 import { RouterModule, Route } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { NotFoundComponent } from './views/errors/not-found/not-found.component';
@@ -16,8 +17,10 @@ import { AddcategoryComponent } from './views/menu/addcategory/addcategory.compo
 import { AddprofileComponent } from './views/users/addusers/addprofile/addprofile.component';
 import { DeletetableComponent } from './views/table/deletetable/deletetable.component'
 
+
 const routes: Route[] = [
   { path: '', pathMatch: 'full', redirectTo: 'orders' },
+  { path: 'login', component: LoginComponent },
   { path: 'orders', component: OrdersComponent },
   { path: 'users', component: UsersComponent },
   { path: 'deleteusers', component: DeleteusersComponent },

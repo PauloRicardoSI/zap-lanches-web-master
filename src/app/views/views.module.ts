@@ -29,6 +29,7 @@ import { DeletemenuComponent } from './menu/deletemenu/deletemenu.component';
 import { AddcategoryComponent } from './menu/addcategory/addcategory.component';
 import { AddprofileComponent } from './users/addusers/addprofile/addprofile.component';
 import { DeletetableComponent } from './table/deletetable/deletetable.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -69,6 +70,7 @@ import { DeletetableComponent } from './table/deletetable/deletetable.component'
     AddcategoryComponent,
     AddprofileComponent,
     DeletetableComponent,
+    LoginComponent,
  
     
 
